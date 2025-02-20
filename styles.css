@@ -1,15 +1,17 @@
-@import url(https://fonts.google.com/specimen/Poppins);
-@import url(https://fonts.google.com/specimen/Open+Sans);
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 * {
     margin: 0;
     box-sizing: border-box;
+    /* border: 2px solid black; */
 }
 
 /* Main */
 main{
-    background-image: url(./images/bg-mobile.svg);
-    background-color:hsl(257, 40%, 49%);
+    background: url(./images/bg-mobile.svg) no-repeat center/contain;
+    background-position: 0% 0%;
+    background-color:  hsl(257, 40%, 49%) ;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -27,9 +29,10 @@ main{
 /* Hero */
 
 .img__hero{
+    padding-top: 20px;
     background: url(./images/illustration-mockups.svg) no-repeat center/contain;
-    padding: 0;
     height: 300px;
+    width: 95%;
 }
 
 /* Features */
@@ -39,6 +42,7 @@ text-align: center;
 color: white;
 display: flex;
 flex-direction: column;
+padding: 25px;
 gap: 20px;
 }
 
@@ -51,13 +55,11 @@ gap: 20px;
     font-family: Open Sans;
     font-weight: 400;
     text-align:center;
-    padding: 10px;
 }
 
 .button__features{
     background-color: white;
     border-radius: 1000px;
-    width: 10px;
     margin: 0 auto;
     padding: 10px;
     text-align: center;
@@ -71,28 +73,27 @@ gap: 20px;
 }
 /* Footer */
 
+.footer{
+    margin-top: 30px;
+}
+
 .social__footer{
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
 .image{
-    width: 50px;
-    height: 50px;
-}
-
-.facebook__social{
-    background: hsl(257, 40%, 49%) url(https://fontawesome.com/) no-repeat center/cover;
-}
-
-.tweeter__social{
-    background: hsl(257, 40%, 49%) url(https://icomoon.io/) no-repeat center/cover;
-
-
-}
-
-.instagram__social{
-    background: hsl(257, 40%, 49%) url(https://ionicons.com/) no-repeat center/cover;
-
-
+    width: 35px;
+    height: 35px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }

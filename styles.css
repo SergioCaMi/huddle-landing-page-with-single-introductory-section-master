@@ -8,14 +8,10 @@
 }
 
 /* Main */
-main{
-    background: url(./images/bg-mobile.svg) no-repeat center/contain;
+body {
+    background: hsl(257, 40%, 49%) url(./images/bg-mobile.svg) no-repeat center/contain;
     background-position: 0% 0%;
-    background-color:  hsl(257, 40%, 49%) ;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
+    margin: 15px;
 }
 
 /* Header */
@@ -23,67 +19,76 @@ main{
 .logo {
     width: 40%;
     margin-left: 20px;
+    margin-top: 15px;
 }
 
 
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
 /* Hero */
 
-.img__hero{
+.img__hero {
     padding-top: 20px;
     background: url(./images/illustration-mockups.svg) no-repeat center/contain;
     height: 300px;
-    width: 95%;
 }
 
 /* Features */
 
 .features {
-text-align: center;
-color: white;
-display: flex;
-flex-direction: column;
-padding: 25px;
-gap: 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.h1__features{
+.h1__features {
     font-family: Poppins;
     font-weight: 600;
 }
 
-.text__features{
+.text__features {
     font-family: Open Sans;
     font-weight: 400;
-    text-align:center;
+    text-align: center;
 }
 
-.button__features{
+.button__features {
     background-color: white;
     border-radius: 1000px;
     margin: 0 auto;
     padding: 10px;
     text-align: center;
     cursor: pointer;
-    color: hsl(257, 40%, 49%) ;
+    color: hsl(257, 40%, 49%);
     width: 175px;
 }
 
-.button__features:hover{
+.button__features:hover {
     background-color: hsl(300, 69%, 71%);
 }
+
 /* Footer */
 
-.footer{
+.footer {
     margin-top: 30px;
 }
 
-.social__footer{
+.social__footer {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.image{
+.image {
     width: 35px;
     height: 35px;
     color: white;
@@ -96,4 +101,53 @@ gap: 20px;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+
+@media (min-width: 622px) {
+    body {
+        /* background: hsl(257, 40%, 49%) url(./images/bg-desktop.svg) no-repeat center/contain; */
+        background-size: cover;
+    }
+}
+
+@media (min-width: 730px) {
+    body {
+        height: 100vh;
+        background: hsl(257, 40%, 49%) url(./images/bg-desktop.svg) no-repeat center/contain;
+        background-size: cover;
+    }
+
+    main {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .hero {
+        width: 50vw;
+    }
+
+    .features {
+        width: 50vw;
+    }
+
+    .features>* {
+        text-align: left;
+    }
+
+    .register__features {
+        align-self: flex-start;
+    }
+
+    .img__hero {
+        background: url(./images/illustration-mockups.svg) no-repeat center/contain;
+    }
+
+    .social__footer{
+justify-content: flex-end;  
+padding-right: 4rem;
+}
+
 }

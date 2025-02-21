@@ -18,6 +18,7 @@ body {
 
 .logo {
     width: 40%;
+    max-width: 200px;
     margin-left: 20px;
     margin-top: 15px;
 }
@@ -106,48 +107,69 @@ main {
 
 @media (min-width: 622px) {
     body {
-        /* background: hsl(257, 40%, 49%) url(./images/bg-desktop.svg) no-repeat center/contain; */
         background-size: cover;
     }
 }
 
-@media (min-width: 730px) {
-    body {
-        height: 100vh;
-        background: hsl(257, 40%, 49%) url(./images/bg-desktop.svg) no-repeat center/contain;
-        background-size: cover;
-    }
 
-    main {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-    }
 
-    .hero {
+@media (min-width: 743px) {
+
+    .text__features {
         width: 50vw;
+        align-self: center;
     }
 
-    .features {
-        width: 50vw;
-    }
-
-    .features>* {
-        text-align: left;
-    }
-
-    .register__features {
-        align-self: flex-start;
-    }
-
-    .img__hero {
-        background: url(./images/illustration-mockups.svg) no-repeat center/contain;
-    }
-
-    .social__footer{
-justify-content: flex-end;  
-padding-right: 4rem;
 }
 
-}
+
+
+    @media (min-width: 1077px) {
+        body {
+            height: 100vh;
+            background: hsl(257, 40%, 49%) url(./images/bg-desktop.svg) no-repeat center/contain;
+            background-size: cover;
+        }
+
+        main {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            height: 70vh;
+        }
+
+        .hero {
+            width: 50vw;
+        }
+
+        .img__hero{
+            background-size: cover;
+        }
+
+        .features {
+            width: 50vw;
+        }
+
+        .features>* {
+            text-align: left;
+        }
+
+        .register__features {
+            align-self: flex-start;
+        }
+
+        .img__hero {
+            background: url(./images/illustration-mockups.svg) no-repeat center/contain;
+        }
+
+        .social__footer {
+            justify-content: flex-end;
+            padding-right: 4rem;
+        }
+
+        .footer{
+            /* margin-top: 15rem; */
+        }
+
+    }

@@ -1,0 +1,42 @@
+/* Reset CSS - Normaliza los estilos por defecto de los navegadores */
+
+/* Box sizing border-box para todos los elementos */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Remueve estilos por defecto en listas */
+ul, ol {
+    list-style: none;
+}
+
+/* Remueve decoraciones en enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Resetea estilos de los elementos de formulario */
+button, input, textarea, select {
+    font: inherit;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+/* Asegura que las imágenes no excedan su contenedor */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilos base para tipografía */
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #000;
+}

@@ -44,13 +44,13 @@ body{
 /* Header */
 
 .logo{
-    width: 35vw;
+    width: 150px;
     
 }
 /* Main */
 
 main{
-    margin: 4rem 0;
+    margin: 4rem 0 2rem 0;
     display: flex;
     flex-direction: column;
     gap: 5rem;
@@ -59,7 +59,7 @@ main{
 /* Hero */
 
 .img__hero {
-    height: 25vh;
+    height: 26vh;
     background: url(./images/illustration-mockups.svg) center / contain no-repeat;
 
 }
@@ -72,6 +72,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 1rem;
 }
 
 .h1__features{
@@ -83,10 +84,13 @@ main{
     font-weight: 400;
 }
 
+.register__features{
+    padding-top: 1rem;
+}
 .button__features{
     background-color: #FFFFFF;
     border-radius: 100px;
-    width: 60%;
+    width: 175px;
     margin: 0 auto;
     color:  hsl(257, 40%, 49%);
     padding: 0.5rem;
@@ -97,15 +101,13 @@ main{
 /* Footer */
 
 
-.footer{
-    padding-top: 2rem;
-}
 
 .social__footer{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
 }
 
 .image{
@@ -117,5 +119,16 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+/* Media Querys */
+
+@media (min-width:600px){
+
+    main {
+        flex-direction: row;
+        
+    }
 
 }

@@ -102,7 +102,7 @@ main {
     font-size: small;
 }
 
-.button__features:hover{
+.button__features:hover {
     background-color: hsl(300, 69%, 71%);
 }
 
@@ -130,12 +130,20 @@ main {
 
 /* Media Querys */
 
+
+@media (min-width:624px) {
+    body {
+        background: hsl(257, 40%, 49%) url(./images/bg-mobile.svg) center / cover no-repeat;
+    }
+}
+
+
 @media (min-width:826px) {
 
     body {
+        background: hsl(257, 40%, 49%) url(./images/bg-desktop.svg) center / cover no-repeat;
         align-items: initial;
         justify-content: space-between;
-        background: hsl(257, 40%, 49%) url(./images/bg-desktop.svg) center / cover no-repeat;
 
     }
 

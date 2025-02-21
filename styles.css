@@ -48,7 +48,6 @@ body {
 
 .logo {
     width: 150px;
-
 }
 
 /* Main */
@@ -59,7 +58,6 @@ main {
     flex-direction: column;
     gap: 5rem;
     max-width: 500px;
-
 }
 
 /* Hero */
@@ -69,7 +67,6 @@ main {
     background: url(./images/illustration-mockups.svg) center / contain no-repeat;
 
 }
-
 
 /* Features */
 
@@ -107,7 +104,6 @@ main {
 
 .button__features:hover{
     background-color: hsl(300, 69%, 71%);
-
 }
 
 /* Footer */

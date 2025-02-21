@@ -28,32 +28,38 @@ black: #1D1D1
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Document */
-*{
+* {
     /* border: 2px solid black; */
 }
 
-body{
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100vh;
     background: hsl(257, 40%, 49%) url(./images/bg-mobile.svg) center / contain no-repeat;
     background-position: 0% 0%;
-    width: 100vw;;
+    width: 100vw;
     color: #FFFFFF;
     padding: 1.3rem;
 }
 
 /* Header */
 
-.logo{
+.logo {
     width: 150px;
-    
+
 }
+
 /* Main */
 
-main{
+main {
     margin: 4rem 0 2rem 0;
     display: flex;
     flex-direction: column;
     gap: 5rem;
+    max-width: 500px;
+
 }
 
 /* Hero */
@@ -67,7 +73,7 @@ main{
 
 /* Features */
 
-.features{
+.features {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -75,34 +81,38 @@ main{
     padding: 1rem;
 }
 
-.h1__features{
+.h1__features {
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;}
+    font-weight: 600;
+}
 
-.text__features{
+.text__features {
     font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
 }
 
-.register__features{
+.register__features {
     padding-top: 1rem;
 }
-.button__features{
+
+.button__features {
     background-color: #FFFFFF;
     border-radius: 100px;
     width: 175px;
     margin: 0 auto;
-    color:  hsl(257, 40%, 49%);
+    color: hsl(257, 40%, 49%);
     padding: 0.5rem;
     font-size: small;
 }
 
+.button__features:hover{
+    background-color: hsl(300, 69%, 71%);
+
+}
 
 /* Footer */
 
-
-
-.social__footer{
+.social__footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +120,7 @@ main{
 
 }
 
-.image{
+.image {
     width: 2rem;
     height: 2rem;
     border: 1px solid white;
@@ -124,11 +134,40 @@ main{
 
 /* Media Querys */
 
-@media (min-width:600px){
+@media (min-width:826px) {
+
+    body {
+        align-items: initial;
+        justify-content: space-between;
+        background: hsl(257, 40%, 49%) url(./images/bg-desktop.svg) center / cover no-repeat;
+
+    }
 
     main {
         flex-direction: row;
-        
+        max-width: 90vw;
+
     }
+
+    .img__hero {
+        height: 50vh;
+        width: 50vw;
+    }
+
+    .features {
+        text-align: left;
+    }
+
+    .button__features {
+        margin-left: 0;
+        text-align: center;
+
+    }
+
+    .social__footer {
+        justify-content: right;
+        margin-right: 2rem;
+    }
+
 
 }
